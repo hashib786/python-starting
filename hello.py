@@ -2,13 +2,6 @@ def hello() :
  for i in range(100) :
   print(f"hello {i + 1}")
 
-# Creating a dictionary with two details
-user_details = {
-    "name": "John Doe",
-    "age": {
-     "name": "John Doe",
-    "age": 25
-    }
-}
+from user_details import user_details
 
 print(user_details["age"]["name"])
