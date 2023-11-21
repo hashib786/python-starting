@@ -6,14 +6,9 @@ timmy.shape("turtle")
 timmy.color("red")
 timmy.fillcolor("green")
 
-timmy.forward(100)
-timmy.left(90)
-timmy.forward(100)
-timmy.left(90)
-timmy.forward(100)
-timmy.left(90)
-timmy.forward(100)
-timmy.left(90)
+for _ in range(4):
+    timmy.forward(100)
+    timmy.left(90)
 
 myScreen = Screen()
 myScreen.exitonclick()
