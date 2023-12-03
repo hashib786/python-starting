@@ -1,6 +1,7 @@
 from turtle import Screen, Turtle
 from paddle import Paddle
 from ball import Ball
+import time
 
 screen = Screen()
 screen.bgcolor("black")
@@ -21,6 +22,8 @@ screen.onkey(r_paddle.go_down, "s")
 
 is_game_on = True
 while is_game_on:
+    time.sleep(0.1)
     screen.update()
+    ball.move()
 
 screen.exitonclick()
