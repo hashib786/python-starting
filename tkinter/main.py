@@ -8,13 +8,19 @@ my_label = Label(text="Hashib Raja First GUI",
                  font=("Arial", 24, "bold"))
 my_label.pack()
 
+# Buttons ************
+
 
 def button_click():
-    my_label["text"] = "Button Pressed" if my_label["text"] == "Hashib Raja First GUI" else "Hashib Raja First GUI"
+    # my_label["text"] = "Button Pressed" if my_label["text"] == "Hashib Raja First GUI" else "Hashib Raja First GUI"
+    my_label.config(text=input.get())
 
 
-button = Button(text="Hello", command=button_click)
+button = Button(text="Add", command=button_click)
 button.pack()
 
+# Inputs ************
+input = Entry(width=10)
+input.pack()
 
 window.mainloop()
